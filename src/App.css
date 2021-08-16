@@ -2,37 +2,95 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #eaeaea;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+
+.wrapper {
+  background-color: white;
+  width: 400px;
+  padding: 32px;
+  box-shadow: 0 24px 16px -16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  
+  
+}
+
+.email-input {
+  width: 100%;
+  height: 45px;
+  padding: 0 16px;
+  margin-top: 16px;
+  box-sizing: border-box;
+  font: inherit;
+  border-radius: 3px;
+  border: 2px solid #d4d5d6;
+  color: #565656;
+  -webkit-appearance: none;
+}
+
+.email-input.has-error {
+  border-color: red;
+}
+
+.error {
+  margin: 0;
+  font-size: 90%;
+  color: tomato;
+}
+
+.email-chip {
+  background-color: #d4d5d6;
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  padding: 0 4px 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.3rem 0.3rem 0;
+}
+
+.email-chip > .delete-button {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 100%;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: grey;
   color: white;
+  cursor: pointer;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

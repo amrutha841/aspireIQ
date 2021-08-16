@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Improvise the application
+
+1) I have just created one js file- would like to separate the components one for multiple email and other for dropdown suggestion
+2) Add test cases for each methods
+3)the email id's are stacked on top- would like to include them in the input value
+4) the dropdown selection is only enabled on click would like to extend for key press
+5) add more json and show a bigger dropdown suggestion
+
